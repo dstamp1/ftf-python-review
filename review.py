@@ -63,6 +63,65 @@ for i in range(100):
     result = ''
 print(result)
 
+#7 Given an integer n, write a function that results the absolute difference between n and 21
+## unless n > 21, then result double the difference.
+
+def diff_from_21(number):
+    return ''
+
+print(diff_from_21(19)) # =2
+print(diff_from_21(10)) # =11
+print(diff_from_21(21)) # =0
+
+#8 The Collatz Conjecture
+## The Collatz conjecture is a conjecture in mathematics that concerns sequences
+## defined as follows: start with any positive integer n. Then each term is obtained
+## from the previous term as follows: if the previous term is even, the next term
+## is one half of the previous term. If the previous term is odd, the next term
+## is 3 times the previous term plus 1. The conjecture is that no matter what
+## value of n, the sequence will always reach 1
+
+# The following function applies the rule one time to a number
+def collatz_one_step(number):
+    if number == 1:
+        return 1
+    if number % 2 == 0:
+        return number / 2
+    if number % 2 == 1:
+        return 3*number+1
+
+# A while loop lets us repeat a process indefinitely until a condition is met
+# use a while loop to apply the collatz_one_step function to count how many steps
+# it takes to take an arbitrary number to 1 (also known as stopping time). Your
+# function will return the stopping time.
+
+def collatz_step_count(number):
+    while number != 1:
+        #business logic
+    return ''
+
+## Challenges:
+# Determine the number less than 100 with the largest stopping time.
+
+# Write a new function that returns the list of numbers from each step of following
+# the collatze_one_step
+
+#9 Forensic Accounting
+## Due to the decimal nature of number systems, a "naturally" occuring data set
+## obeys Benford's law. If we take a collection of numbers which span a few orders
+## of magnitude and count up the frequency of the digits 1-9 in the largest placevalue,
+## we expect there to be more 1s than 9s. (approximately 30% of the leading digits should
+## be 1 and 5% should be 9s)
+
+## Write a function to analyze the following two datasets to determine the frequency
+## of 1s, 2s, 3s, etc. in the largest placevalue. See if you can determine which
+## dataset is "natural" and which is likely tampered with.
+benford_dataset_one = data.benford_dataset_one
+benford_dataset_two = data.benford_dataset_two
+
+
+
+
 ## Additional resources for coding challenges
 # https://adventofcode.com/
 # https://projecteuler.net/
