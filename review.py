@@ -98,6 +98,7 @@ def collatz_one_step(number):
 def collatz_step_count(number):
     while number != 1:
         #business logic
+        return ''
     return ''
 
 ## Challenges:
